@@ -1,0 +1,70 @@
+#Create-Account {
+    background-color: #c2e8c2;
+    width: 50vw;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: #444444 3px 3px 10px 3px;
+}
+#LoginForm {
+    background-color: #c2e8c2;
+    width: 40vw;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    box-shadow: #444444 3px 3px 10px 3px;
+}
+#LoginForm #LoginEmail,#LoginPassword{
+    height: 70%;
+}
+#container{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+}
+input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3px 7px;
+}
+
+#btnCreate{
+    width: 80%;
+    margin-left: 10%;
+    
+}
+#btnLogin
+{
+    width: 80%;
+    margin-left: 10%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+#AlreadyHaveAnAccount, #DonotHaveAnAccount{
+    display: flex;
+    justify-content: center;   
+}
+#LoginShowIcon,#LoginHideIcon
+{
+    top: 18%;
+    position: absolute;
+    right: 0;
+}
+#CreateAccountShowIcon, #CreateAccountHideIcon {
+    top: 18%;
+    position: absolute;
+    right: 0;
+}
+.txtInput{
+    position: relative;
+}
+#txtpassInput{
+    position: relative;
+}

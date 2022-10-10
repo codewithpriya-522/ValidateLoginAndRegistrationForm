@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate And Responsive Login And Registration Form</title>
+    <script src="https://kit.fontawesome.com/4dc617b5ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./ValidateResponsiveLoginAndRegistrationForm.css" />
+</head>
+<body>
+    <form id="Create-Account">
+        <div id="container">
+            <h1>CREATE ACCOUNT</h1>
+            <div class="UserName">
+                <label id="lblUserName">UserName:</label>
+                <input id="txtUserName" type="text" placeholder="Enter your Name" required>
+                <p id="MsgUserName"></p>
+            </div>
+            <div class="Email">
+                <label id="lblEmail">Email:</label>
+                <input id="txtEmail" type="email" placeholder="Enter Your Name" required>
+                <p id="MsgEmail"></p>
+            </div>
+            <div class="Password">
+                <label id="lblPassword">Password:</label>
+                <div class="txtInput">
+                    <input id="txtPassword" type="password" placeholder="Enter Your Password" required>
+                    <i id="CreateAccountShowIcon" onclick="PasswordHideAndShow()"  class="fa-regular fa-eye"  ></i>
+                    <i id="CreateAccountHideIcon" onclick="PasswordHideAndShow()" class="fa-regular fa-eye-slash" style="display:none" ></i>
+                </div>
+                <p id="MsgPassword"></p>
+            </div>
+            <div class="ConfirmPassword">
+                <label id="lblConfirmPassword">ConfirmPassword:</label>
+                <input id="txtConfirmPassword" type="password" placeholder="Re-Enter Your Password" required>
+                <p id="MsgConfirmPassword"></p>
+            </div>
+            <button type="button" id="btnCreate" onclick="EmptyOrNot()">Create</button>
+            <p id="AlreadyHaveAnAccount"> Already have an account?<button id="LinkAlreadyHaveAnAccount" href="" style="background-color: transparent;color:blue;border:none;outline:none;">Login</button></p>
+        </div>
+    </form>
+    <form id="LoginForm">
+        <div id="container">
+
+            <h1>LOGIN</h1>
+            <div id="LoginEmail">
+                <label id="lblLoginEmail">Email:</label>
+                <input id="txtLoginEmail" type="email" placeholder="Enter Your Email" required>
+                <p id="msg1"></p>
+            </div>
+            <div id="LoginPassword">
+                <label id="lblLoginPassword">Password:</label>
+                <div id="txtpassInput">
+                    <input id="txtLoginPassword" type="password" placeholder="Re-Enter Your Password" required >
+                    <i id="LoginShowIcon" onclick="LoginPasswordHideAndShow()"  class="fa-regular fa-eye"  ></i>
+                    <i id="LoginHideIcon" onclick="LoginPasswordHideAndShow()" class="fa-regular fa-eye-slash" style="display:none"></i>
+                </div>
+                <p id="msg2"></p>
+            </div>
+            <button type="button" id="btnLogin" onclick="LoginFormEmptyOrNot()">Login</button>
+            <p id="DonotHaveAnAccount">Don't Have An Account?<button id="LinkDon'tHaveAnAccount" href="" style="background-color: transparent;color:blue;border:none;outline:none;height: 0vh;">Create Account</button></p>
+        </div>
+    </form>
+    
+</body>
+<script src="./ValidateResponsiveLoginAndRegistrationForm.js"></script>
+</html>
